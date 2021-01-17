@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #353540;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-card {
+  background: #fff;
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.img-card:last-of-type {
+  margin-bottom: 0px;
+}
+
+.img-card__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-card:nth-of-type(1) .img-card__image {
+  background: url(./img/game_1.jpg) no-repeat center center / cover;
+}
+
+.img-card:nth-of-type(2) .img-card__image {
+  background: url(./img/game_2.jpg) no-repeat center center / cover;
+}
+
+.img-card:nth-of-type(3) .img-card__image {
+  background: url(./img/game_3.jpg) no-repeat center center / cover;
+}
+
+.img-card:nth-of-type(4) .img-card__image {
+  background: url(./img/game_4.jpg) no-repeat center center / cover;
+}
+
+.img-card__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(226deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 35%,
+      rgba(255, 255, 255, 0.2) 42%,
+      rgba(255, 255, 255, 0) 60%);
+}
+
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .img-card {
+    width: 45vw;
+    height: 100vh;
+    margin-bottom: 40px;
+  }
+
+  .img-card:last-of-type,
+  .img-card:nth-of-type(3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width : 1025px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    justify-content: space-evenly;
+  }
+
+  .img-card {
+    width: 260px;
+    height: 387px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background: transparent;
+    transition: all 0.3s;
+  }
+
+  .img-card:hover {
+    transform: rotateX(7deg) translateY(-6px);
+    box-shadow: 0px 10px 10px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .img-card__image {
+    transform-origin: top;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .img-card__image::before {
+    height: 120%;
+    transition: all 0.5s;
+    transform: translateY(-20%);
+
+  }
+
+  .img-card__image:hover::before {
+    transform: translateY(0);
+  }
+
+  .img-card:hover .img-card__image {
+    transform: rotateX(5deg);
+  }
+
+
+
+}
