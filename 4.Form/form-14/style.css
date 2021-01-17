@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #dfdfdf;
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: #555;
+}
+
+.form {
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+}
+
+.form__row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.form__row label {
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.form__row label i {
+  padding: 0px 8px;
+}
+
+.form__row input,
+.form__row textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: "Saira Semi Condensed", sans-serif;
+  box-shadow: 0 8px 6px -6px #555;
+  order: 2;
+  transition: all 0.5s;
+  color: #555;
+}
+
+.form__row input:focus~label,
+.form__row textarea:focus~label {
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.form__row input:focus,
+.form__row textarea:focus {
+  background: #fff;
+  box-shadow: none;
+}
+
+.form__row textarea {
+  height: 70px;
+  overflow: hidden;
+  resize: none;
+}
+
+.form__btn {
+  margin: 20px auto;
+  font-family: "Saira Semi Condensed", sans-serif;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background: #2f4ad0;
+  box-shadow: 0 8px 6px -6px #555;
+  transition: all 0.5s;
+}
+
+.form__btn:hover {
+  letter-spacing: 2px;
+}
+
+.form__row--inline {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__row--inline h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  cursor: default;
+}
+
+.form__row--inline i {
+  font-size: 14px;
+  color: #000;
+  margin-left: 5px;
+}
+
+.form__social-bar {
+  display: flex;
+  text-align: center;
+  width: 70%;
+}
+
+.form__social-bar a {
+  text-decoration: none;
+  color: #000;
+  flex: 1;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.form__social-bar a:hover {
+  color: #2f4ad0;
+}
