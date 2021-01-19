@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #2c3e50;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  position: relative;
+  background-color: #34495e;
+  border-radius: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 15px 0px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.nav a:nth-child(1) {
+  width: 100px;
+}
+
+.nav a:nth-child(2) {
+  width: 120px;
+}
+
+.nav a:nth-child(3) {
+  width: 100px;
+}
+
+.nav a:nth-child(4) {
+  width: 160px;
+}
+
+.nav a:nth-child(5) {
+  width: 120px;
+}
+
+.nav .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1abc9c;
+  height: 100%;
+  width: 100px;
+  border-radius: 10px;
+  z-index: 0;
+  transition: all 0.5s;
+}
+
+.nav a:nth-child(2):hover ~ .box {
+  background-color: #e74c3c;
+  left: 100px;
+  width: 120px;
+}
+
+.nav a:nth-child(3):hover ~ .box {
+  background-color: #3498db;
+  left: 220px;
+  width: 100px;
+}
+
+.nav a:nth-child(4):hover ~ .box {
+  left: 320px;
+  width: 160px;
+}
+
+.nav a:nth-child(5):hover ~ .box {
+  background-color: #e67e22;
+  left: 480px;
+  width: 120px;
+}
