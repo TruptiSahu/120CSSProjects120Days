@@ -13,7 +13,8 @@
 | 08  | [Button 8](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-8)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/qBaOXXL)
 | 09  | [Button 9](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-9)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/jOMbLGm)
 | 10  | [Button 10](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-10)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/RwGWZjb)
-| 11  | [Button 10](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-11)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/MWjavOO)
+| 11  | [Button 11](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-11)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/MWjavOO)
+| 12  | [Button 12](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-12)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/rNMOzYv)
 
 ## License
 
