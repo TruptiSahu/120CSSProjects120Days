@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1d22;
+}
+
+.nav {
+  width: 600px;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.nav li {
+  flex: 1 1 0;
+  height: 100%;
+  margin: 0px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./waves.svg);
+}
+
+.nav li:hover::before {
+  animation: waves 0.5s 1 linear;
+}
+
+.nav li:hover::before {
+  animation: waves 0.5s 1 linear;
+}
+
+.nav li:hover a {
+  color: #d94f5c;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #777;
+  font-size: 22px;
+}
+
+@keyframes waves {
+  100% {
+    background-position: 100%;
+  }
+}
