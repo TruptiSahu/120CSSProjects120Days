@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+  background-image: linear-gradient(-170deg, #064997 20%, #105ba7);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(270deg, #2b67ac 3px, transparent 0), linear-gradient(#2b67ac 3px, transparent 0), linear-gradient(270deg, rgba(43, 103, 172, .4) 1px, transparent 0), linear-gradient(#2b67ac 1px, transparent 0), linear-gradient(270deg, rgba(43, 103, 172, .4) 1px, transparent 0), linear-gradient(#2b67ac 1px, transparent 0);
+  background-size: 112px 112px, 112px 112px, 56px 56px, 56px 56px, 28px 28px, 28px 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav {
+  list-style: none;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.nav li {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.nav li::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px dashed #fff;
+  transition: all 0.3s cubic-bezier(0.32, 1.1, 0.46, 1.46);
+  transform: scale(0.9);
+}
+
+.nav li:hover::before {
+  transform: scale(1);
+}
+
+.nav a svg {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.nav li:nth-of-type(5) a svg {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.links__icon {
+  transform: translateY(15px);
+  transition: all 0.3s;
+}
+
+.links__title {
+  transform: scale(0) translateY(-30px);
+  transition: all 0.3s;
+}
+
+.nav li:hover .links__icon {
+  transform: translateY(0px);
+}
+
+.nav li:hover .links__title {
+  transform: scale(1) translateY(0px);
+}
+
+.nav li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.nav li:nth-of-type(2) {
+  top: -160px;
+  left: 160px;
+}
+
+.nav li:nth-of-type(3) {
+  top: 160px;
+  left: -160px;
+}
+
+.nav li:nth-of-type(4) {
+  top: 160px;
+  left: 160px;
+}
+
+.nav li:nth-of-type(5) {
+  top: -160px;
+  left: -160px;
+}
