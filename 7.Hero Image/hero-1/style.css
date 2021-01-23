@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+body {}
+
+.header {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  /* background: #000; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.navbar__links {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 100px;
+}
+
+.navbar__links li {
+  margin: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.navbar__links li a {
+  margin: 0px 30px;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.navbar__links li a::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #f14a60;
+  transform: translateY(-2px) scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s;
+}
+
+.navbar__links li a:hover::before {
+  transform: translateY(-2px) scaleX(1);
+}
+
+.navbar__links li a:hover {
+  color: #f14a60;
+}
+
+.navbar__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__icons li {
+  margin: 0px 20px;
+}
+
+.navbar__icons img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+}
+
+.content__left,
+.content__right {
+  flex-basis: 50%;
+}
+
+.content__right img {
+  width: 100%;
+}
+
+.content__left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.searchBar {
+  width: 300px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(218, 217, 217);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar__text {
+  order: 1;
+  flex-grow: 1;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: rgb(131, 131, 131);
+}
+
+.searchBar__btn {
+  width: 25px;
+  margin-right: 20px;
+}
+
+.searchBar__btn img {
+  width: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.content__left .content__title {
+  font-size: 100px;
+  margin-top: 30px;
+  font-weight: 500;
+
+}
+
+.content__subheading {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.text-highlight {
+  color: #f14a60;
+}
+
+.content__text {
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(138, 138, 138);
+}
+
+.content__btns {
+  display: flex;
+}
+
+.content__btn {
+  font-weight: 500;
+  border: 2px solid #f14a60;
+  padding: 10px 40px;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.content__btn--learn {
+  margin-right: 20px;
+  background: linear-gradient(#fb7381, #f14a60);
+  color: #fff;
+}
+
+.content__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(241, 74, 96, 0.863);
+}
+
+.content__btn--watch {
+  color: #f14a60;
+}
+
+.social-icons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  line-height: 10px;
+  background: #000;
+  opacity: 0.5;
+  margin-right: 20px;
+}
+
+.social-icons a {
+  height: 20px;
+  margin: 0px 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.social-icons a i {
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover i {
+  color: #f14a60;
+  text-shadow: 0px 5px 10px rgb(255, 255, 255),
+    0px 5px 15px rgba(241, 74, 96, 0.863);
+}
