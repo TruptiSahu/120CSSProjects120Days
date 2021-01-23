@@ -26,7 +26,7 @@
 | 21  | [Button 21](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-21)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/MWjavPV)
 | 22  | [Button 22](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-22)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/abmvyQX)
 | 23  | [Search Bar 1](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-1)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/RwGWLba)
-
+| 24  | [Search Bar 2](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-2)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/rNMOGjb)
 
 ## License
 
