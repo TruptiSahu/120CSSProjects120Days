@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-facebook: #3b5998;
+  --color-twitter: #3cf;
+  --color-gmail: #dc4a38;
+  --color-dribble: #f26798;
+  --color-skype: #00aff0;
+  --color-pinterest: #BD081C;
+  --color-instagram: #C13584;
+  --color-vimeo: #19B7EA;
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecf0f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.socialBar a {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #222;
+  color: #222;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialBar a::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  border-radius: 50%;
+  z-index: -1;
+  transform: translateY(-110%);
+  transition: all 0.3s;
+}
+
+.socialBar a:hover::before {
+  transform: translateY(0);
+}
+
+.socialBar a:nth-of-type(1) {
+  border-color: var(--color-facebook);
+  color: var(--color-facebook);
+}
+
+.socialBar a:nth-of-type(2) {
+  border-color: var(--color-twitter);
+  color: var(--color-twitter);
+}
+
+.socialBar a:nth-of-type(3) {
+  border-color: var(--color-gmail);
+  color: var(--color-gmail);
+}
+
+.socialBar a:nth-of-type(4) {
+  border-color: var(--color-dribble);
+  color: var(--color-dribble);
+}
+
+.socialBar a:nth-of-type(5) {
+  border-color: var(--color-skype);
+  color: var(--color-skype);
+}
+
+.socialBar a:nth-of-type(6) {
+  border-color: var(--color-pinterest);
+  color: var(--color-pinterest);
+}
+
+.socialBar a:nth-of-type(7) {
+  border-color: var(--color-instagram);
+  color: var(--color-instagram);
+}
+
+.socialBar a:nth-of-type(8) {
+  border-color: var(--color-vimeo);
+  color: var(--color-vimeo);
+}
+
+.socialBar a:nth-of-type(1):hover::before {
+  background: var(--color-facebook);
+}
+
+.socialBar a:nth-of-type(2):hover::before {
+  background: var(--color-twitter);
+}
+
+.socialBar a:nth-of-type(3):hover::before {
+  background: var(--color-gmail);
+}
+
+.socialBar a:nth-of-type(4):hover::before {
+  background: var(--color-dribble);
+}
+
+.socialBar a:nth-of-type(5):hover::before {
+  background: var(--color-skype);
+}
+
+.socialBar a:nth-of-type(6):hover::before {
+  background: var(--color-pinterest);
+}
+
+.socialBar a:nth-of-type(7):hover::before {
+  background: var(--color-instagram);
+}
+
+.socialBar a:nth-of-type(8):hover::before {
+  background: var(--color-vimeo);
+}
+
+.socialBar a i {
+  transition: all 0.2s;
+}
+
+.socialBar a:hover i {
+  color: #fff;
+}
