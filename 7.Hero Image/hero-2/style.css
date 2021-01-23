@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 60%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 25px 130px;
+}
+
+.navbar__logo {
+  height: 50px;
+  margin-right: 50px;
+}
+
+.navbar__links {
+  flex-grow: 1;
+}
+
+.navbar__link {
+  display: inline-block;
+  margin: 0px 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 250px;
+  background-image: linear-gradient(to left, #5f0a87, transparent);
+  margin-right: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.searchBar__text {
+  background: transparent;
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  text-align: end;
+}
+
+.searchBar__text::placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.searchBar__icon {
+  color: rgb(238, 237, 237);
+  font-size: 14px;
+}
+
+.signUp__btn {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 7px 40px;
+  border-radius: 50px;
+  background: #5f0a87;
+  border: 2px solid #fff;
+
+}
+
+.content {
+  position: absolute;
+  width: 500px;
+  top: 35%;
+  right: 100px;
+  color: #fff;
+}
+
+.content__title {
+  font-family: 'Anton', sans-serif;
+  font-size: 80px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #dcdcdc;
+  text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.content__para {
+  font-size: 16px;
+  text-align: center;
+}
+
+.content__btn {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto;
+  background: #6d0b9b;
+  transition: all 0.3s;
+}
+
+.content__btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
