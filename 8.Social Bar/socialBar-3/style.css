@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-facebook: #3b5998;
+  --color-twitter: #3cf;
+  --color-gmail: #dc4a38;
+  --color-dribble: #f26798;
+  --color-skype: #00aff0;
+  --color-pinterest: #BD081C;
+  --color-instagram: #C13584;
+  --color-vimeo: #19B7EA;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.socialBar {
+  display: flex;
+}
+
+.socialBar a {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px;
+  font-size: 25px;
+  background: #fff;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.socialBar a i {
+  z-index: 10;
+  transition: all 0.2s;
+}
+
+.socialBar a:hover i {
+  color: #fff;
+}
+
+.socialBar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: top;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.socialBar a:hover::before {
+  transform: scale(1);
+}
+
+.socialBar a:hover::before {
+  transform: scale(1);
+}
+
+.socialBar a:nth-of-type(1):before {
+  background: var(--color-facebook);
+}
+
+.socialBar a:nth-of-type(2):before {
+  background: var(--color-twitter);
+}
+
+.socialBar a:nth-of-type(3):before {
+  background: var(--color-gmail);
+}
+
+.socialBar a:nth-of-type(4):before {
+  background: var(--color-dribble);
+}
+
+.socialBar a:nth-of-type(5):before {
+  background: var(--color-skype);
+}
+
+.socialBar a:nth-of-type(1) {
+  color: var(--color-facebook);
+}
+
+.socialBar a:nth-of-type(2) {
+  color: var(--color-twitter);
+}
+
+.socialBar a:nth-of-type(3) {
+  color: var(--color-gmail);
+}
+
+.socialBar a:nth-of-type(4) {
+  color: var(--color-dribble);
+}
+
+.socialBar a:nth-of-type(5) {
+  color: var(--color-skype);
+}
