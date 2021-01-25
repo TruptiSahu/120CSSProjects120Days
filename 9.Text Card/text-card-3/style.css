@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-color: #BA68C8;
+  --blue-color: #4dd0e1;
+  --green-color: #9ccc65;
+  --yellow-color: #FDD835;
+  --red-color: #ef5350;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a72;
+  background-image: linear-gradient(45deg, #E91E63, #9C27B0);
+}
+
+ul {
+  list-style: none;
+}
+
+.card-container {
+  max-width: 480px;
+  height: 230px;
+  width: 100%;
+  position: relative;
+  perspective: 2500px;
+}
+
+.card-container:hover .card {
+  transform: rotateX(180deg);
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.4);
+  transform-style: preserve-3d;
+
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background: linear-gradient(45deg, #101010, #2c3e50);
+  overflow: hidden;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.card__back {
+  transform: rotateX(180deg);
+}
+
+
+.numbers-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.numbers-line li {
+  margin: 12px;
+  color: rgb(87, 87, 87);
+  font-size: 13px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.card__btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(49, 40, 40);
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+.card__btn::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  z-index: -1;
+  transform: translateX(40%) translateY(-70%);
+}
+
+.card__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.card__back {
+  background: linear-gradient(-45deg, #101010, #2c3e50);
+}
+
+.card__back .numbers-line li {
+  color: rgb(129, 129, 129);
+}
+
+.card__back .card__btn {
+  color: rgb(20, 20, 20);
+}
+
+.card__back .card__content {
+  line-height: 21px;
+}
+
+.purple {
+  color: var(--purple-color);
+}
+
+.blue {
+  color: var(--blue-color);
+}
+
+.green {
+  color: var(--green-color);
+}
+
+.yellow {
+  color: var(--yellow-color);
+}
+
+.red {
+  color: var(--red-color);
+}
+
+.indent {
+  margin-left: 30px;
+}
