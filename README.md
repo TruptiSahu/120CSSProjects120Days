@@ -45,6 +45,7 @@
 | 40  | [Search Bar 18](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-18)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/RwGWZJN)
 | 41  | [Search Bar 19](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-19)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/YzGyxjK)
 | 42  | [Search Bar 20](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-20)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/yLaYoxv)
+| 43  | [Search Bar 21](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-21)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/MWjavPV)
 
 ## License
 
