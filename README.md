@@ -44,7 +44,7 @@
 | 39  | [Search Bar 17](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-17)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/zYKvpeM)
 | 40  | [Search Bar 18](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-18)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/QWKjaoq)
 | 41  | [Search Bar 19](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/2.Search%20Bar/searchBar-19)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/xxEwpNe)
-| 42  | [Image Wrapper 1](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-1)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/yLaYoxv)
+| 42  | [Image Wrapper 1](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-1)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/xxEwYwo)
 | 43  | [Image Wrapper 2](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-2)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/jOMbZWz)
 | 44  | [Image Wrapper 3](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-3)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/dypYdMY)
 
