@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Helvetica neue", Helvetica, Arial, Sans-serif;
+  color: #727272;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 40px 0px 50px 0;
+}
+
+.title {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+}
+
+.title span {
+  color: #e43137;
+  margin-left: -11px;
+}
+
+.title span:nth-of-type(1) {
+  color: #e43137;
+}
+
+.title span:nth-of-type(2) {
+  color: #0063d1;
+}
+
+.title span:nth-of-type(3) {
+  color: #f4ae01;
+}
+
+.title span:nth-of-type(4) {
+  color: #85b716;
+}
+
+.inner-footer {
+  margin: auto;
+  max-width: 1250px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.footer-col h3,
+.footer-col li {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.footer-col h3:hover,
+.footer-col li:hover {
+  text-decoration: underline;
+}
+
+.footer-col ul {
+  margin-bottom: 30px;
+}
+
+.footer-col ul li {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-col ul li i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+
+
+.location {
+  height: 35px;
+  width: 160px;
+  outline: none;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+/* FOOTER BOTTOM */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom .left-col {
+  font-size: 11px;
+  display: flex;
+}
+
+.footer__bottom p {
+  color: #333;
+}
+
+.footer__bottom ul {
+  display: flex;
+}
+
+.footer__bottom ul li {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.footer__bottom .right-col img {
+  width: 80px;
+}
