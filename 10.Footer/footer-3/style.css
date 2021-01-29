@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --primary-color: rgb(114, 137, 218);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.title img {
+  height: 140px;
+}
+
+.footer {
+  background: rgb(35, 39, 42);
+  width: 100%
+}
+
+.container {
+  max-width: 1220px;
+  margin: auto;
+  padding: 90px 0 80px 0;
+}
+
+.footer__content {
+  display: flex;
+  align-items: baseline;
+}
+
+.left-col {
+  flex: 1;
+}
+
+.left-col h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.left-col select {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.left-col select option {
+  color: #000;
+}
+
+.socialBar i {
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 25px;
+}
+
+.right-col {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.right-col .col h3,
+.right-col .col li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+.right-col .col li {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.right-col .col li:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  border-top: 1px solid var(--primary-color);
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__bottom img {
+  height: 35px;
+}
+
+.footer__cta {
+  width: 115px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  text-align: center;
+  color: #fff;
+  background: var(--primary-color);
+  font-size: 14px;
+}
