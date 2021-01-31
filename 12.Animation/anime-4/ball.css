@@ -1,0 +1,118 @@
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  background: url(http://hop.ie/balls/images/tennisball.png) no-repeat;
+  background-size: 100%;
+  animation: jump 3s linear 2 6s;
+  transform: translateY(0px) scale(0);
+}
+
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+  -webkit-filter: blur(5px);
+  z-index: 2;
+}
+
+.ball:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(245, 237, 48, 0), rgba(200, 190, 20, 0.2) 50%, #575300 100%);
+}
+
+.stage .shadow {
+  position: absolute;
+  bottom: -50px;
+  left: -12.5px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(70deg) scale(1);
+  opacity: 0;
+  z-index: -1;
+  animation: shadow-jump 3s linear 2 6s;
+}
+
+@keyframes shadow-jump {
+  0% {
+    transform: rotateX(70deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotateX(80deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateX(70deg);
+    opacity: 1;
+  }
+}
+
+.stage {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  position: absolute;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(-240px);
+    width: 75px;
+    height: 75px;
+  }
+
+  50% {
+    transform: translateY(0px);
+    width: 83px;
+    height: 70px;
+  }
+
+  55% {
+    width: 73px;
+    height: 75px;
+  }
+
+  60% {
+    width: 80px;
+    height: 75px;
+  }
+
+  100% {
+    transform: translateY(-240px);
+    width: 75px;
+    height: 75px;
+  }
+
+}
