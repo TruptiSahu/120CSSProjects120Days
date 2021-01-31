@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #34435E;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background: #fff;
+  color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.timeline {
+  max-width: 450px;
+  margin: auto;
+}
+
+.timeline li {
+  list-style: none;
+  line-height: 25px;
+  padding: 40px;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  position: relative;
+}
+
+.timeline li:nth-child(odd) {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  padding-left: 0;
+}
+
+.timeline li:nth-child(even) {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.timeline li::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.timeline li:nth-child(odd)::before {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.timeline li:nth-child(even)::before {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/* Media Queries for mobile */
+@media only screen and (max-width: 550px) {
+  .timeline {
+    width: 80%;
+    margin: auto;
+  }
+
+  .timeline li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 30px;
+  }
+
+}
