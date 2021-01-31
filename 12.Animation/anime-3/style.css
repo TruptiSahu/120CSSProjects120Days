@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background: #7ae298;
+  background: linear-gradient(45deg, #7ae298 0%, #9af282 100%);
+  overflow: hidden;
+}
+
+.cube {
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  line-height: 220px;
+  position: relative;
+  box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cube span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.cube span img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cube span:nth-child(1) {
+  bottom: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anime-1 8s linear infinite;
+}
+
+.cube span:nth-child(2) {
+  bottom: -100px;
+  left: 5%;
+  transform: translateX(-50%);
+  animation: anime-2 8s linear infinite 0.5s;
+}
+
+.cube span:nth-child(3) {
+  bottom: -140px;
+  left: 100%;
+  transform: translateX(-50%);
+  animation: anime-3 8s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.cube span:nth-child(4) {
+  bottom: -100px;
+  left: 5%;
+  transform: translateX(-50%);
+  animation: anime-2 8s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes anime-1 {
+  0% {
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  7% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  14% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  21% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  28% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  40% {
+    bottom: 190px;
+    left: 8%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  47% {
+    bottom: 190px;
+    left: 8%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  54% {
+    bottom: 190px;
+    left: 90%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  61% {
+    bottom: 190px;
+    left: 90%;
+    transform: translateX(-50%) rotate(225deg);
+  }
+
+  71% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(225deg);
+  }
+
+  78% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  85% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  92% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  99% {
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+}
+
+@keyframes anime-2 {
+  0% {
+    bottom: -100px;
+    left: 5%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  7.5% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  15% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  22.5% {
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  30% {
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  37.5% {
+    bottom: 190px;
+    left: 90%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  45% {
+    bottom: 190px;
+    left: 90%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  52.5% {
+    bottom: 190px;
+    left: 8%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  60% {
+    bottom: 190px;
+    left: 8%;
+    transform: translateX(-50%) rotate(-180deg);
+  }
+
+  67.5% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(-180deg);
+  }
+
+  75% {
+    bottom: 10px;
+    left: 8%;
+    transform: translateX(-50%) rotate(-270deg);
+  }
+
+  82.5% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-270deg);
+  }
+
+  89% {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-135deg);
+  }
+
+  96.5% {
+    bottom: -100px;
+    left: 5%;
+    transform: translateX(-50%) rotate(-135deg);
+  }
+}
+
+@keyframes anime-3 {
+  0% {
+    bottom: -140px;
+    left: 100%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+
+  7% {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+
+  14% {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  21% {
+    bottom: -40px;
+    left: -10%;
+    transform: translateX(-50%) rotate(-90deg);
+  }
+
+  28% {
+    bottom: -40px;
+    left: -10%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  35% {
+    bottom: 240px;
+    left: -10%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  42% {
+    bottom: 240px;
+    left: -10%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  49% {
+    bottom: 240px;
+    left: 110%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  56% {
+    bottom: 240px;
+    left: 110%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  63% {
+    bottom: -40px;
+    left: 110%;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  70% {
+    bottom: -40px;
+    left: 110%;
+    transform: translateX(-50%) rotate(270deg);
+  }
+
+  77% {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(270deg);
+  }
+
+  85% {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
+  }
+
+  98% {
+    bottom: -140px;
+    left: 100%;
+    transform: translateX(-50%) rotate(135deg);
+  }
+}
