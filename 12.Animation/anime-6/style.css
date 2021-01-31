@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(background.jpg);
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.container-bird {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  animation: fly-right-one 20s linear infinite;
+}
+
+.container-bird-2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  animation: fly-right-two 12s linear infinite 5s;
+  opacity: 0;
+}
+
+.bird {
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 54.2px;
+  height: 76.9px;
+  z-index: 10;
+  animation: fly-cycle 1s steps(10) -0.5s infinite;
+}
+
+
+
+@keyframes fly-cycle {
+
+  100% {
+    background-position: -553.8px 0;
+  }
+
+}
+
+@keyframes fly-right-one {
+
+  0% {
+    transform: scale(0.8) translateX(-10vw);
+  }
+
+  10% {
+    transform: translateY(20vh) translateX(10vw) scale(0.8);
+  }
+
+  20% {
+    transform: translateY(20vh) translateX(30vw) scale(0.8);
+  }
+
+  30% {
+    transform: translateY(40vh) translateX(50vw) scale(1);
+  }
+
+  38% {
+    transform: scale(1) translateY(28vh) translateX(58vw);
+  }
+
+  40% {
+    transform: scale(1) translateY(28vh) translateX(58vw) rotateY(-180deg);
+  }
+
+  60% {
+    transform: scale(1) translateY(22vh) translateX(45vw) rotateY(-180deg);
+  }
+
+  62% {
+    transform: scale(1) translateY(22vh) translateX(45vw) rotateY(0deg);
+  }
+
+  68% {
+    transform: scale(1) translateY(22vh) translateX(55vw);
+  }
+
+  80% {
+    transform: translateY(20vh) translateX(70vw) scale(1);
+  }
+
+  90% {
+    transform: translateY(10vh) translateX(90vw) scale(1);
+  }
+
+  100% {
+    transform: translateY(5vh) translateX(110vw) scale(1);
+  }
+}
+
+@keyframes fly-right-two {
+
+  0% {
+    transform: scale(0.8) translateX(-10vw);
+    opacity: 1;
+  }
+
+  10% {
+    transform: translateY(20vh) translateX(10vw) scale(0.8);
+  }
+
+  20% {
+    transform: translateY(25vh) translateX(30vw) scale(1);
+  }
+
+  30% {
+    transform: translateY(30vh) translateX(40vw) scale(1);
+  }
+
+  40% {
+    transform: translateY(35vh) translateX(50vw) scale(1);
+  }
+
+  50% {
+    transform: translateY(30vh) translateX(60vw) scale(1);
+  }
+
+  80% {
+    transform: translateY(10vh) translateX(80vw) scale(1);
+  }
+
+  100% {
+    transform: translateY(20vh) translateX(110vw) scale(0.8);
+    opacity: 1;
+  }
+}
