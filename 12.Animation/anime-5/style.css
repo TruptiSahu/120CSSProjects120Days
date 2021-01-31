@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  width: 180px;
+  height: 350px;
+  border-radius: 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.container .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #312952 0%, #5A4A94 35%, #7B6BC6 100%);
+  border-radius: 90px;
+}
+
+.container .bg .star {
+  position: absolute;
+  background-color: #fff;
+}
+
+.container .bg .star.lg {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.container .bg .star.md {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+
+}
+
+.container .bg .star.sm {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+}
+
+.container .bg .star:nth-child(1) {
+  top: 62%;
+  left: 15%;
+}
+
+.container .bg .star:nth-child(2) {
+  top: 60%;
+  left: 80%;
+}
+
+.container .bg .star:nth-child(3) {
+  top: 40%;
+  left: 84%;
+}
+
+.container .bg .star:nth-child(4) {
+  top: 30%;
+  left: 87%;
+}
+
+.container .bg .star:nth-child(5) {
+  top: 27%;
+  left: 65%;
+}
+
+.container .bg .star:nth-child(6) {
+  top: 18%;
+  left: 75%;
+}
+
+.container .bg .star:nth-child(7) {
+  top: 10%;
+  left: 25%;
+}
+
+.container .bg .star:nth-child(8) {
+  top: 15%;
+  left: 50%;
+}
+
+.container .bg .star:nth-child(9) {
+  top: 23%;
+  left: 52%;
+}
+
+.container .bg .star:nth-child(10) {
+  top: 30%;
+  left: 48%;
+}
+
+.container .bg .star:nth-child(11) {
+  top: 10%;
+  left: 78%;
+}
+
+.container .bg .star:nth-child(12) {
+  top: 32%;
+  left: 20%;
+}
+
+.container .bg .star:nth-child(13) {
+  top: 45%;
+  left: 15%;
+}
+
+.container .bg .star:nth-child(14) {
+  top: 57%;
+  left: 8%;
+}
+
+.container .bg .star:nth-child(15) {
+  top: 65%;
+  left: 5%;
+}
+
+.container .bg .star:nth-child(16) {
+  top: 65%;
+  left: 75%;
+}
+
+.container .bg .star:nth-child(17) {
+  top: 38%;
+  left: 90%;
+}
+
+.container .bg .star:nth-child(17) {
+  top: 38%;
+  left: 90%;
+}
+
+.container .bg .star:nth-child(18) {
+  top: 60%;
+  left: 9%;
+}
+
+.container .bg .star:nth-child(19) {
+  top: 55%;
+  left: 15%;
+}
+
+.container .bg .star:nth-child(20) {
+  top: 50%;
+  left: 40%;
+}
+
+.container .bg .star:nth-child(21) {
+  top: 53%;
+  left: 55%;
+}
+
+.container .bg .star:nth-child(22) {
+  top: 47%;
+  left: 88%;
+}
+
+.container .bg .star:nth-child(23) {
+  top: 37%;
+  left: 60%;
+}
+
+.container .bg .star:nth-child(24) {
+  top: 34%;
+  left: 54%;
+}
+
+.container .river {
+  position: absolute;
+  bottom: 7%;
+  left: -15%;
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+}
+
+.container .river img {
+  width: 130%;
+  height: 130%;
+}
+
+.container .lanterns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid rebeccapurple;
+}
+
+.container .lanterns .lantern {
+  position: absolute;
+  display: block;
+}
+
+.container .lanterns .lantern img {
+  width: 100%;
+}
+
+.container .lanterns .lantern:nth-child(1) {
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-1 10s linear infinite 6s;
+  opacity: 1;
+}
+
+.container .lanterns .lantern:nth-child(2) {
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 55px;
+  height: 55px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-1 15s linear infinite 2s;
+  opacity: 1;
+}
+
+.container .lanterns .lantern:nth-child(3) {
+  bottom: 0;
+  left: 25%;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-2 5s linear infinite 5s;
+  opacity: 1;
+}
+
+.container .lanterns .lantern:nth-child(4) {
+  bottom: 0;
+  left: 25%;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-2 10s linear infinite 2s;
+  opacity: 1;
+}
+
+.container .lanterns .lantern:nth-child(5) {
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-1 15s linear infinite 7s;
+  opacity: 1;
+}
+
+.container .lanterns .lantern:nth-child(6) {
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-1 15s linear infinite 10s;
+  opacity: 1;
+}
+
+
+.container .lanterns .lantern:nth-child(7) {
+  bottom: 0;
+  left: 70%;
+  z-index: 1;
+  width: 55px;
+  height: 55px;
+  transform: translateX(-50%) translateY(100%);
+  animation: anime-3 10s linear infinite 5s;
+  opacity: 1;
+}
+
+
+@keyframes anime-1 {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+
+  }
+
+  35% {
+    transform: translateX(-50%) translateY(100%);
+    bottom: 100%;
+    left: 100%;
+    opacity: 1;
+  }
+
+  36% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(0%);
+    bottom: -10%;
+    left: 100%;
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+  85% {
+    transform: translateX(-100%) translateY(100%);
+    bottom: 120%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  86% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+
+}
+
+@keyframes anime-2 {
+  0% {
+    bottom: 0;
+    left: 25%
+  }
+
+  100% {
+    bottom: 100%;
+    left: 25%;
+  }
+}
+
+@keyframes anime-3 {
+  0% {
+    bottom: 0;
+    left: 70%
+  }
+
+  100% {
+    bottom: 100%;
+    left: 70%;
+  }
+}
