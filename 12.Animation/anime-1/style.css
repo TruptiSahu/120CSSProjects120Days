@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1abc9c;
+  background: linear-gradient(135deg, #1abc9c 0%, #8e44ad 100%);
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .profile-img {
+  width: 150px;
+  height: 150px;
+  background: url(profile.jpg) no-repeat center center/cover;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  animation: float 6s ease-in-out infinite;
+}
+
+.container .profile-info h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.container .profile-info p {
+  margin: 5px;
+  color: #333;
+  font-size: 12px;
+}
+
+.container .profile-info .social-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .profile-info .social-bar a {
+  font-size: 17px;
+  margin-right: 20px;
+  color: #cccccc;
+  transition: all 0.5s;
+}
+
+.container .profile-info .social-bar a:last-child {
+  margin-right: 0;
+}
+
+.container .profile-info .social-bar a:hover {
+  color: #fff;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  }
+
+  50% {
+    transform: translateY(-25px);
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+
+  }
+}
