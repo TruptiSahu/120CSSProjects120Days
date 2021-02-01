@@ -57,6 +57,7 @@
 | 52  | [Image Wrapper 11](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-11)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/VwKvQWj)
 | 53  | [Image Wrapper 12](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-12)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/ZEpbrXP)
 | 54  | [Image Wrapper 13](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-13)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/BaLoYmJ)
+| 55  | [Image Wrapper 14](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/3.Image%20Wrapper/img-wrapper-14)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/qBaOxxb)
 
 ## License
 
