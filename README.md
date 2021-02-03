@@ -2,7 +2,7 @@
 120 Projects in 120 Days - HTML/CSS
 
 |  #  | Project | Live Demo |
-| --- |:-------:| ---------:|
+| --- |-------| ---------:|
 | 01  | [Button 1](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-1)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/dypYzoQ)               |
 | 02  | [Button 2](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-2)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/rNMOzxY)               |
 | 03  | [Button 3](https://github.com/TruptiSahu/120CSSProjects120Days/tree/master/1.Button/btn-3)                             | [Live Demo](https://codepen.io/TruptiSahu/pen/oNzjezJ)               |
